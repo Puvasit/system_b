@@ -82,7 +82,7 @@ if prompt := st.chat_input("Ask about inventory..."):
         raw_text = raw_response.text
 
         # Step 2: Refine the response using a second Gemini call
-        stylist_model = genai.GenerativeModel("gemini-1.5-flash")
+        stylist_model = genai.GenerativeModel("gemini-2.5-flash")
         polish_prompt = f"""
 You are a helpful assistant. Rewrite the following answer in a clear, professional, and friendly tone.
 
